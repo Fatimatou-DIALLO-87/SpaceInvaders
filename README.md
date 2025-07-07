@@ -8,9 +8,9 @@ Ce projet est une réinterprétation du célèbre jeu **Space Invaders**, dével
 
 - **Vagues d’envahisseurs (ennemis)**. Les ennemis apparaissent en formation. Ils se déplacent de gauche à droite et descendent progressivement. Chaque vague devient plus rapide et plus difficile.
 
-- **Effets d’explosion animés**. Lorsqu’un tir touche un ennemi, une animation d’explosion s’affiche. Cela rend le jeu plus dynamique et immersif.
+- **Effets d’explosion animés**. Lorsqu’un tir touche un ennemi ou le vaisseau du joueur, une animation d’explosion s’affiche. Cela rend le jeu plus dynamique et immersif.
 
-- **Gestion des collisions**. Les missiles peuvent toucher les ennemis, le joueur ou les obstacles. Chaque collision déclenche une action : destruction, perte de vie, explosion.
+- **Gestion des collisions**. Les missiles peuvent toucher les ennemis, le joueur ou les obstacles. Chaque collision déclenche une action : destruction, perte de vie ( le jeu s'arrete si le joueur perd ses trois vies ), explosion.
 
 - **Obstacles destructibles**. Des blocs de protection protègent temporairement le joueur. Ils se dégradent à chaque impact et finissent par disparaître.
 
@@ -42,28 +42,27 @@ Le projet est organisé de façon modulaire pour séparer clairement les différ
 | `red_invader_1.png/2.png` | Sprites des envahisseurs rouges               |
 | `explosion.png`           | Effet visuel d’explosion                      |
 | `bloc.png`                | Bloc de protection                            |
-| `image.jpg`               | Image utilisée pour fond ou menu (à vérifier) |
+| `image.jpg`               | Image utilisée pour le lancement du jeu           |
 
 
-📁 levels/ — Fichiers de niveau
-level1.txt : description textuelle de la première vague d’ennemis (format à préciser).
+📁 levels/ — Fichiers de niveau <br>
+level1.txt : description textuelle de la première vague d’ennemis .
 
-📁 score/ — Sauvegarde des scores
+📁 score/ — Sauvegarde des scores <br>
 score.txt : contient les meilleurs scores ou le score actuel du joueur
-
 
 # 🎮 Comment jouer
 Lancer le fichier space_invaders.pde avec l’environnement Processing.
 
 Appuyer sur la touche 1 pour démarrer une nouvelle partie.
 
-Utiliser les flèches gauche et droite pour déplacer le vaisseau.
+Utiliser les flèches gauche ◀️ et droite ▶️ pour déplacer le vaisseau.
 
 Appuyer sur espace pour tirer sur les ennemis.
 
-Éliminer tous les envahisseurs sans se faire toucher pour gagner.
+Éliminer tous les envahisseurs sans se faire toucher 3 fois pour gagner.
 
-Appuyer sur Échap pour afficher le menu contextuel (pause ou retour au menu).
+Appuyer sur Échap pour afficher le menu popUP .
 
 ## 📦 Installation
 
@@ -77,7 +76,7 @@ Appuyer sur Échap pour afficher le menu contextuel (pause ou retour au menu).
 
 ## 🛠️ Technologies utilisées
 
--[Processing](https://processing.org)(langage Processing basé sur Java) à 100%
+-[Processing](https://processing.org)(langage Processing basé sur Java)
 - Ressources graphiques en PNG
 
 
